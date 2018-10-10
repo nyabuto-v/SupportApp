@@ -1,0 +1,476 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Ebenezer Foundation</title>
+
+  <!-- Bootstrap -->
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/animate.css' %}" rel="stylesheet" />
+  <link href="{% static 'css/prettyPhoto.css' %}" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <!-- =======================================================
+    Theme Name: OnePage
+    Theme URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="site-logo">
+          <a href="index.html" class="brand"><i> Ebenezer Cancer </br> Support Foundation </i></a>
+        </div>
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+							<i class="fa fa-bars"></i>
+						</button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#portfolio">Gallery</a></li>
+            <li><a href="#features">Events</a></li>
+            <li><a href="#donation">Donate</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <!-- /.Navbar-collapse -->
+      </div>
+    </div>
+  </nav>
+
+  <div id="home">
+    <div class="slider">
+      <div id="about-slider">
+        <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators visible-xs">
+            <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-slider" data-slide-to="1"></li>
+            <li data-target="#carousel-slider" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="{% static 'images/slide4.jpg' %}" class="img-responsive" alt="">
+            </div>
+            <div class="item">
+              <img src="{% static 'images/slide8.jpg' %}" class="img-responsive" alt="">
+            </div>
+            <div class="item">
+              <img src="{% static 'images/slide6.jpg' %}" class="img-responsive" alt="">
+            </div>
+          </div>
+
+          <a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+						<i class="fa fa-angle-left"></i>
+					</a>
+
+          <a class=" right carousel-control hidden-xs" href="#carousel-slider" data-slide="next">
+						<i class="fa fa-angle-right"></i>
+					</a>
+        </div>
+        <!--/#carousel-slider-->
+      </div>
+      <!--/#about-slider-->
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="container">
+      <div class="center">
+        <div class="col-md-6 col-md-offset-3">
+          <h2>About Us</h2>
+          <hr>
+          <p class="lead">Ebenezer Cancer Support Foundation is here to give hope to thousands of people who need care and support in their journey battling with cancer.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 wow fadeInRight">
+          <img src="{% static 'images/2.png' %}" class="img-responsive" />
+          <p>Mr. Mativo on the left side with Mr. Peter Lolo who was giving his testimony in the story telling session during our Thursday Meet-Up. </p>
+
+        </div>
+        <!--/.col-sm-6-->
+
+        <div class="col-sm-6 wow fadeInDown">
+          <div class="accordion">
+            <div class="panel-group" id="accordion1">
+              <div class="panel panel-default">
+                <div class="panel-heading active">
+                  <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
+                                  Meet The Founder
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                </div>
+
+                <div id="collapseOne1" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <div class="media accordion-inner">
+                      <div class="pull-left">
+                        <img class="img-responsive" src="{% static 'images/accordion2.png' %}">
+                      </div>
+                      <div class="media-body">
+                        <h4>Mr. Fredrick Mativo</h4>
+                        <p>The Founder of Ebenezer Cancer Support Foundation. A Cancer Survivor and Caregiver. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
+                                  How did we start.. 
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                </div>
+                <div id="collapseTwo1" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>Mr. Fredrick Mativo experienced a tough moment in his early years living with cancer hence he saw the need to do charity ny joining hand with his family to start the foundation in April this year (2018). Since then Mr. Mativo and his wife Josephine have been able to meet many cancer patients and caregivers in different locations. </br> Mr. Mativo was only given two and a half years to live by his doctor, but due to lifestyle changes, he has now lived for eighteen years.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1">
+                                  Why Ebenezer is the place to be?
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                </div>
+                <div id="collapseThree1" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>Ebenezer Cancer Support Foundation is one of the founding pioneers of simple nutrition
+                      care (Changing Lifestyle), Counselling, Massage, Telephone Helpline and Support Group or
+                      Story telling therapy models.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour1">
+                                  Our Objective
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                </div>
+                <div id="collapseFour1" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>Our key objective is to Strengthen, Support and Change Lifestyles of Cancer Patients, Survivors, Caregivers and their affected families. Cancer is no longer a DEATH SENTENCE, there is HOPE for those willing to change Lifestyle.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/#accordion1-->
+          </div>
+        </div>
+
+      </div>
+      <!--/.row-->
+    </div>
+    <!--/.container-->
+  </section>
+  <!--/#about-->
+
+  <section id="portfolio">
+    <div class="container">
+      <div class="center">
+        <div class="col-md-6 col-md-offset-3">
+          <h2>Gallery</h2> <!-- portfolio -->
+          <hr>
+          <p class="lead">Ebenezer is one big family, where we get to learn, explore, empower, educate and enrich ourselves through engaging in various activities. Welcome and view what we do!! </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col-lg-12">
+        <ul class="portfolio-filter text-center">
+          <li><a class="btn btn-default active" href="#" data-filter="*">All</a></li>
+          <li><a class="btn btn-default" href="#" data-filter=".bootstrap">Devotion</a></li>
+          <li><a class="btn btn-default" href="#" data-filter=".html">Exercise</a></li>
+          <li><a class="btn btn-default" href="#" data-filter=".wordpress">Nutrition</a></li>
+        </ul>
+        <!--/#portfolio-filter-->
+
+        <div class="row">
+          <div class="portfolio-items">
+            <div class="portfolio-item apps col-xs-12 col-sm-4 col-md-3">
+              <div class="recent-work-wrap">
+                <img class="img-responsive" src="{% static 'images/portfolio/recent/item111.png' %}" alt="">
+                <div class="overlay">
+                  <div class="recent-work-inner">
+                    <h3><a href="#">Exercise</a></h3>
+                    <p>Improves your health, and boosts your immunity</p>
+                    <a class="preview" href="{% static 'images/portfolio/full/item111.png' %}" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/.portfolio-item-->
+
+            <div class="portfolio-item joomla bootstrap col-xs-12 col-sm-4 col-md-3">
+              <div class="recent-work-wrap">
+                <img class="img-responsive" src="{% static 'images/portfolio/recent/item17.png' %}" alt="">
+                <div class="overlay">
+                  <div class="recent-work-inner">
+                    <h3><a href="#">Devotion</a></h3>
+                    <p>Builds your spiritual muscles, increases your faith and trust in God</p>
+                    <a class="preview" href="{% static 'images/portfolio/full/item17.png' %}" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/.portfolio-item-->
+
+            <div class="portfolio-item bootstrap wordpress col-xs-12 col-sm-4 col-md-3">
+              <div class="recent-work-wrap">
+                <img class="img-responsive" src="{% static 'images/portfolio/recent/item122.png' %}" alt="">
+                <div class="overlay">
+                  <div class="recent-work-inner">
+                    <h3><a href="#">Nutrition</a></h3>
+                    <p>Right diet provides optimum health and promotes good blood</p>
+                    <a class="preview" href="{% static 'images/portfolio/full/item122.png' %}" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/.portfolio-item-->
+
+            <div class="portfolio-item joomla wordpress apps col-xs-12 col-sm-4 col-md-3">
+              <div class="recent-work-wrap">
+                <img class="img-responsive" src="{% static 'images/portfolio/recent/item13.png' %}" alt="">
+                <div class="overlay">
+                  <div class="recent-work-inner">
+                    <h3><a href="#">Healthy Soup</a></h3>
+                    <p>Contains a wide variety of nutritional benefits</p>
+                    <a class="preview" href="{% static 'images/portfolio/full/item13.png' %}" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/.portfolio-item-->
+
+            <div class="portfolio-item joomla html bootstrap col-xs-12 col-sm-4 col-md-3">
+              <div class="recent-work-wrap">
+                <img class="img-responsive" src="{% static 'images/portfolio/recent/item111.png' %}" alt="">
+                <div class="overlay">
+                  <div class="recent-work-inner">
+                    <h3><a href="#">Physical engagement</a></h3>
+                    <p>Increases blood flow</p>
+                    <a class="preview" href="{% static 'images/portfolio/full/item111.png' %}" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/.portfolio-item-->
+
+            <div class="portfolio-item wordpress html apps col-xs-12 col-sm-4 col-md-3">
+              <div class="recent-work-wrap">
+                <img class="img-responsive" src="{% static 'images/portfolio/recent/item16.png' %}" alt="">
+                <div class="overlay">
+                  <div class="recent-work-inner">
+                    <h3><a href="#">Soup</a></h3>
+                    <p>A good mixture of nutrients</p>
+                    <a class="preview" href="{% static 'images/portfolio/full/item16.png' %}" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/.portfolio-item-->
+
+            <div class="portfolio-item wordpress html col-xs-12 col-sm-4 col-md-3">
+              <div class="recent-work-wrap">
+                <img class="img-responsive" src="{% static 'images/portfolio/recent/item122.png' %}" alt="">
+                <div class="overlay">
+                  <div class="recent-work-inner">
+                    <h3><a href="#">Salad</a></h3>
+                    <p>Good for body cleansing</p>
+                    <a class="preview" href="{% static 'images/portfolio/full/item122.png' %}" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/.portfolio-item-->
+
+            <div class="portfolio-item wordpress html bootstrap col-xs-12 col-sm-4 col-md-3">
+              <div class="recent-work-wrap">
+                <img class="img-responsive" src="{% static 'images/portfolio/recent/item18.png' %}" alt="">
+                <div class="overlay">
+                  <div class="recent-work-inner">
+                    <h3><a href="#">Enough exercise</a></h3>
+                    <p>Ensures proper blood circulation</p>
+                    <a class="preview" href="{% static 'images/portfolio/full/item18.png' %}" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/.portfolio-item-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/#portfolio-item-->
+
+  <section id="features">
+    <div class="container">
+      <div class="row">
+        <div class="center">
+          <div class="col-md-6 col-md-offset-3">
+            <h2>Events</h2> <!-- features -->
+            <hr>
+            <p class="lead">Ebenezer is full of enriching events that equip all volunteers, caregivers, patients and cancer survivors.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow fadeInLeft">
+          <h3>Planting</h3>
+          <img src="{% static 'images/portfolio/recent/item15.png' %}" alt="">
+          <p>Every member of Ebenezer has a personal homework of planting any of crops of choice and showcase his/her progress in our Thursday Meet-Up.</p>
+        </div>
+
+        <div class="col-md-4 wow fadeInUp">
+          <h3>Counselling</h3>
+          <img src="{% static 'images/portfolio/recent/item14.png' %}" alt="">
+          <p>We have a counselling session which empowers members with encouragements and testimonies that uplift our hearts and gives hope to all.</p>
+        </div>
+
+        <div class="col-md-4 wow fadeInRight">
+          <h3>Exercise</h3>
+          <img src="{% static 'images/portfolio/recent/item111.png' %}" alt="">
+          <p>Promotes optimum health and enhances proper circulation of blood </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="map">
+    <div id="google-map" data-latitude="40.713732" data-longitude="-74.0092704"></div>
+  </div>
+  <section id="contact">
+    <div class="contact-page">
+      <div class="container">
+        <div class="center">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="row contact-wrap">
+          <div class="col-md-8 col-md-offset-2">
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validation"></div>
+              </div>
+
+              <div class="text-center"><button type="submit" class="btn btn-primary btn-lg">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+        <!--/.row-->
+      </div>
+      <!--/.container-->
+    </div>
+    <!--/#contact-page-->
+  </section>
+
+  <footer id="footer" class="midnight-blue">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="text-center">
+            <a href="#home" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
+          </div>
+          &copy; EbenezerCancerFoundation.org </br> All Rights Reserved.
+          <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=OnePage
+            -->
+            <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+          </div>
+        </div>
+
+        <div class="top-bar">
+          <div class="col-lg-12">
+            <div class="social">
+              <ul class="social-share">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--/#footer-->
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+  <script src="{% static 'js/jquery.isotope.min.js' %}"></script>
+  <script src="{% static 'js/wow.min.js' %}"></script>
+  <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+  <script src="{% static 'contactform/contactform.js' %}"></script>
+
+</body>
+
+</html>
