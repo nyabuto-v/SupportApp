@@ -9,6 +9,14 @@ from donation2.forms import ContactForm
 class HomePageView(TemplateView):
     template_name = "index.html"
 
+# class AboutPageView(TemplateView):
+#     template_name = "index.html"
+
+class ContactPageView(TemplateView):
+    template_name = "contact_success.html"
+
+
+
 def contact(request):
     form_class = ContactForm
 
@@ -51,7 +59,7 @@ def contact(request):
             return redirect('contact')
 
 
-    return render(request, 'index.html', {
+    return render(request, 'contact_success.html', {
         'form': form_class,
     })    
 

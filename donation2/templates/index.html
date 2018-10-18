@@ -18,12 +18,7 @@
   <link href="{% static 'css/animate.css' %}" rel="stylesheet" />
   <link href="{% static 'css/prettyPhoto.css' %}" rel="stylesheet">
   <link href="{% static 'css/style.css' %}" rel="stylesheet">
-  <!-- =======================================================
-    Theme Name: OnePage
-    Theme URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
-    Author: BootstrapMade
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
+
 </head>
 
 <body>
@@ -31,7 +26,7 @@
     <div class="container">
       <div class="row">
         <div class="site-logo">
-          <a href="index.html" class="brand"><i> Ebenezer Cancer </br> Support Foundation </i></a>
+          <a href="/" class="brand"><i> Ebenezer Cancer </br> Support Foundation </i></a>
         </div>
 
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -43,7 +38,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="menu">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#home">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#portfolio">Gallery</a></li>
             <li><a href="#features">Events</a></li>
@@ -392,7 +387,7 @@
           <div class="col-md-8 col-md-offset-2">
             <div id="sendmessage">Your message has been sent. Thank you!</div>
             <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
+            <form action="/contact/" method="post" role="form" class="contactForm">
               {% csrf_token %}
               {{ form.as_p }}
               <div class="form-group">

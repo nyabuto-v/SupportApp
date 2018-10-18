@@ -8,4 +8,5 @@ urlpatterns = [
     # url(r'^about/$', views.AboutPageView.as_view(), name='about'),
 
      url(r'^contact/$', views.contact, name='contact'),
+     url(r'^contact2/$', views.ContactPageView.as_view(), name='contact2'),
 ]
