@@ -32,7 +32,7 @@ DATABASES = {
     )
 }
 
-ALLOWED_HOSTS = ['supportapp2']
+ALLOWED_HOSTS = ['supportapp2.herokuapp.com']
 
 
 # Application definition
